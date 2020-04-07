@@ -45,7 +45,7 @@ def sorted_matrix
 end
 
 
-rspec ./spec/nested_array_spec.rb:8 # When a learning to build nested arrays, 
+rspec ./spec/nested_array_spec.rb:8 # When a learning to build nested arrays,
 the sorted_matrix method returns a nested array made from two constants
 with sorted elements
 
