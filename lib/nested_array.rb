@@ -32,16 +32,13 @@ organic_and_reg = [
 end
 
 def sorted_matrix
-  let counter = 0
+  counter = 0
   new_array = []
-  while counter < CONVENTIONAL_PRODUCE.length do
-    ORGANIC_PRODUCE = CONVENTIONAL_PRODUCE.sort
-    newArray.push(CONVENTIONAL_PRODUCE[counter])
-    counter += 1
-  end
-  while counter < ORGANIC_PRODUCE.length do
-    ORGANIC_PRODUCE = ORGANIC_PRODUCE.sort
-    newArray.push(ORGANIC_PRODUCE[counter])
+  sort_con = CONVENTIONAL_PRODUCE.sort
+  org_con = ORGANIC_PRODUCE.sort
+  while counter < sort_con.length do
+    new_array.push(sort_con[counter])
+    new_array.push(org_con[counter])
     counter += 1
   end
   new_array
